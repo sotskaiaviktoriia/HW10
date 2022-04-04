@@ -13,9 +13,8 @@ class Employee {
   get fullName() {
     return `${this.firstName} ${this.lastName}`;
   }
-  static vacationDays() {
-    console.log("кол-во дней отпуска в году:", 18);
-  }
+  static vacationDays = 18;
+
   yearSalary() {
     return this.salary * 12;
   }
@@ -25,5 +24,4 @@ const employee = new Employee("Peter", "Parker", 27, "middle", 1000);
 const trainee = new Employee("Lydia", "Martin", 20, "junior", 350);
 console.log(trainee);
 console.log(employee.fullName);
-Employee.vacationDays();
 console.log(trainee.yearSalary());
